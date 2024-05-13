@@ -12,8 +12,8 @@ public:
 	void setID();
 	void printAll();
 
-	static void setNim(int pNim) { nim = pNim; }
-	static int getNim() { return nim; }
+	static void setNim(long int pNim) { nim = pNim; }
+	static long int getNim() { return nim; }
 	mahasiswa(string pnama) {
 		nama = pnama;
 		setID();
