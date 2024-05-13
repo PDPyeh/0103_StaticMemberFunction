@@ -6,7 +6,7 @@ class mahasiswa {
 private:
 	static long int nim;
 public:
-	int id;
+	long int id;
 	string nama;
 
 	void setID();
@@ -14,9 +14,22 @@ public:
 
 	static void setNim(int pNim) { nim = pNim; }
 	static int getNim() { return nim; }
-	mahasiswa(string pnama) : nama(pnama) { setID(); }
+	mahasiswa(string pnama) {
+		nama = pnama;
+		setID();
+	}
 
 }; 
 
-int mahasiswa::nim = 20230140103;
+long int mahasiswa::nim = 20230140103;
+void mahasiswa::setID() {
+	id = ++nim;
+}
+void mahasiswa::printAll() {
+	cout << "ID   = " << id << endl;
+	cout << "Nama = " << nama << endl;
+	cout << endl;
+}
 
+
+}
