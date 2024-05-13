@@ -2,18 +2,25 @@
 #include<string>
 using namespace std;
 
-class mahasiswa {
+class Mahasiswa {
 public:
 	int nim;
 	string nama;
 
 public:
-	mahasiswa() {
+	Mahasiswa() {
 		nim = 0;
 		nama = "";
 	};
-	mahasiswa(int);
-	mahasiswa(string);
-	mahasiswa(int iNim, string iNama);
+	Mahasiswa(int iNim) {
+		nim = iNim;
+	}
+	Mahasiswa(string iNama) {
+		nama = iNama;
+	}
+	
+	Mahasiswa(int iNim, string iNama);
+
 	void cetak();
 };
+
