@@ -2,10 +2,11 @@
 #include<string>
 using namespace std;
 
-class Mahasiswa {
+class angka {
 private:
-	int nim;
-	string nama;
+	int *arr;
+	string panjang;
 public:
+	angka
 	
 };

@@ -33,10 +33,10 @@ public:
 };
 
 int main() {
-	Mahasiswa mhs1("Pradipak");
-	Mahasiswa mhs2("Pradipak");
+	Mahasiswa mhs1;
+	Mahasiswa mhs2(20);
 	Mahasiswa mhs3("Pradipak");
-	Mahasiswa mhs4("Pradipak");
+	Mahasiswa mhs4(30,"Pradipak");
 
 	mhs1.cetak();
 	mhs2.cetak();
