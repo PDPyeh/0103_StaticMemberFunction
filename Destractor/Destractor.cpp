@@ -24,6 +24,11 @@ public:
 			cout << i << " = " << arr[i] << endl;
 		}
 	}
-	void isiData();
+	void isiData() {
+		for (int i = 1;i <= panjang;i++) {
+			cout << i << " = ";
+			cin >> arr[i];
+		}
+	}
 	
 };
