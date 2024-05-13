@@ -7,6 +7,6 @@ private:
 	int *arr;
 	string panjang;
 public:
-	angka
+	angka(int);
 	
 };
