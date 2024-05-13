@@ -1,11 +1,10 @@
 #include<iostream>
-#include<string>
 using namespace std;
 
 class angka {
 private:
 	int *arr;
-	string panjang;
+	int panjang;
 public:
 	angka(int i) {
 		panjang = i;
@@ -21,7 +20,9 @@ public:
 	}
 
 	void cetakData() {
-
+		for (int i = 1;i<= panjang;i++) {
+			cout << i << " = " << arr[i] << endl;
+		}
 	}
 	void isiData();
 	
