@@ -42,6 +42,7 @@ int main() {
 	mhs2.cetak();
 	mhs3.cetak();
 	mhs4.cetak();
+	return 0;
 }
 
 
